@@ -2,7 +2,7 @@ package com.ejemplo.favspot.model
 
 import com.google.gson.annotations.SerializedName
 
-class Place {
+data class Place (
     val id: Int,
 
     @SerializedName("user_id")
@@ -22,4 +22,4 @@ class Place {
 
     @SerializedName("image_url")
     val imageUrl: String? = null
-}
+)

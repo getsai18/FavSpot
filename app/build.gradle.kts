@@ -41,6 +41,41 @@ android {
 
 dependencies {
 
+    // Iconos de Mateerial
+    implementation("androidx.compose.material:material-icons-core")
+    implementation("androidx.compose.material:material-icons-extended")
+
+    // Para conecciónes a API
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // Corrutinas
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
+    // Para manejar la navegación entre pantallas
+    implementation("androidx.navigation:navigation-compose:2.7.0")
+
+    // Servicios de ubicacion GPS
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+
+    // Dependencia para los mapas
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation("com.google.maps.android:maps-compose:2.11.4")
+
+    // Carga de imagnes
+    implementation("io.coil-kt:coil-compose:2.5.0")
+
+    // Material Design 3
+    implementation(libs.androidx.material3)
+
+    // Layouts de Foundation
+    implementation("androidx.compose.foundation:foundation-layout:1.9.5")
+
+    // Herramienta de trazeo osea la herramienta para medir el rendimiento y los tiempos de ejecución
+    implementation(libs.androidx.benchmark.traceprocessor)
+
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
